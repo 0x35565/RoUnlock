@@ -3,8 +3,7 @@
 
 
 
-# RoUnlock
-RoUnlock is a free to use tool to remove the FPS lock on your roblox instance. Sets the lock to 
+# RoUnlockRoUnlock is a free to use tool to remove the FPS lock on your roblox instance. 
 
 # Why? 
 as i was looking for alternatives to the axstins FPS unlocker i found the link: https://devforum.roblox.com/t/how-to-unlock-the-60-fps-cap-withwithout-software/2220352 it was better than axstins but, it was tedious and annoying to manually place the files inside of the roblox directory. So, being the good lad that i am i decided to make a script to automate that for us (: 
