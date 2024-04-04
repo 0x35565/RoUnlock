@@ -38,7 +38,7 @@ def add_json():
     for potential_target in potential_targets:
         for potential_target_inside_dir in potential_target.iterdir():
             if 'RobloxPlayerBeta.exe' in str(potential_target_inside_dir):
-                os.chdir(str(potential_target_inside_dir).strip(r'\RobloxPlayerBeta.exe'))
+                os.chdir(str(potential_target_inside_dir).strip('RobloxPlayerBeta.exe'))
                 create_file = os.system('mkdir ClientSettings')
                 if create_file == 1:
                     os.chdir('ClientSettings')
