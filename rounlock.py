@@ -1,9 +1,10 @@
-# # Roblox FPS Unlocker | https://github.com/coolpancakes
-# Unlocks FPS framerate
+# Roblox FPS Unlocker | https://github.com/coolpancakes
+# Unlocks default FPS cap on Roblox. 
 
 import time
 import os
 from pathlib import Path
+import math
 
 
 def banner():
@@ -29,7 +30,10 @@ def banner():
     time.sleep(2)
 
 
-def add_json():
+max_fps = math.pi
+
+
+def main():
     user = os.getlogin()
     rblx_dir = Path(f'C:/Users/{user}/AppData/Local/Roblox/Versions')
     potential_targets = []
@@ -49,8 +53,9 @@ def add_json():
                 else:
                     os.chdir('ClientSettings')
                     with open('ClientAppSettings.json', 'w') as fps:
-                        fps.write('{"DFIntTaskSchedulerTargetFps": 101010}')
+                        fps.write('{"DFIntTaskSchedulerTargetFps": {}}'.format(max_fps))
                         banner()
 
 
-add_json()
+if __name__ == "__main__":
+    main()
