@@ -1,10 +1,9 @@
 # Roblox FPS Unlocker | https://github.com/coolpancakes
-# Unlocks default FPS cap on Roblox. 
+# Unlocks default FPS cap on Roblox.
 
 import time
 import os
 from pathlib import Path
-import math
 
 
 def banner():
@@ -30,9 +29,6 @@ def banner():
     time.sleep(2)
 
 
-max_fps = math.pi
-
-
 def main():
     user = os.getlogin()
     rblx_dir = Path(f'C:/Users/{user}/AppData/Local/Roblox/Versions')
@@ -47,13 +43,13 @@ def main():
                 if create_file == 1:
                     os.chdir('ClientSettings')
                     with open('ClientAppSettings.json', 'w') as fps:
-                        fps.write('{"DFIntTaskSchedulerTargetFps": 101010}')
+                        fps.write('{"DFIntTaskSchedulerTargetFps": 9999}')
                         os.system('cls')
                         banner()
                 else:
                     os.chdir('ClientSettings')
                     with open('ClientAppSettings.json', 'w') as fps:
-                        fps.write('{"DFIntTaskSchedulerTargetFps": {}}'.format(max_fps))
+                        fps.write('{"DFIntTaskSchedulerTargetFps": 9999}')
                         banner()
 
 
