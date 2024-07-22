@@ -30,11 +30,15 @@ def banner():
 
 
 def main():
-    user = os.getlogin()
+    path = Path(os.getcwd())
+    user = str(path).split("\\")[2]
     rblx_dir = Path(f'C:/Users/{user}/AppData/Local/Roblox/Versions')
     potential_targets = []
     for rblx in rblx_dir.iterdir():
-        potential_targets.append(rblx)
+        if str(rblx).split("\\")[-1] == "RobloxStudioInstaller.exe":
+            pass
+        else:
+            potential_targets.append(rblx)
     for potential_target in potential_targets:
         for potential_target_inside_dir in potential_target.iterdir():
             if 'RobloxPlayerBeta.exe' in str(potential_target_inside_dir):
