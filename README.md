@@ -2,7 +2,8 @@
 
 
 
-
+# NOTE:
+If you had python installed on windows 10 and upgraded to windows 11 with that previous python version you may need to uninstall every instance of python on your computer and reinstall it if this script is not working when you're double clicking it, alternatively you can run the script from the CMD line. 
 
 # RoUnlock
 RoUnlock is a free to use tool to remove the FPS lock on your roblox instance. 
