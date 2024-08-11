@@ -5,10 +5,11 @@
 RoUnlock is a free to use tool to remove the FPS lock on your roblox instance. 
 
 # Steps to use
-**NOTE** Run once after every update in order to keep your FPS unlocked forever. 
+**NOTE** Run once after every update in order to keep your FPS unlocked forever. Skip the first step if you have python installed. 
 
-1. Double click main.py
-2. Let it run
-3. FPS Unlocked. 
+1. Install python here https://www.python.org/ftp/python/3.12.5/python-3.12.5-amd64.exe open it and go through the setup wizard. Make sure you click install to PATH during setup   
+2. Double click main.py
+3. Let it run
+4. FPS Unlocked. 
 
 
