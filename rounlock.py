@@ -9,7 +9,7 @@ from pathlib import Path
 def banner():
     print(r'''
 
-			made by coolpancakes | RoUnlock | https://github.com/coolpancakes
+			made by 0x4155 | RoUnlock | https://github.com/coolpancakes
 
 
         ____        __  __      __           __  
